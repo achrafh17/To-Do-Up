@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.top {
+  width: 100vw;
+  height: 35vh;
+  background-image: url("images/bg-desktop-dark.jpg");
+
+  background-size: cover;
+}
+.bottom {
+  width: 100vw;
+  height: 65vh;
+  background-color: hsl(235, 21%, 11%);
+}
+.main {
+  position: absolute;
+  width: 40vw;
+  height: fit-content;
+  margin-top: -100vh;
+  margin-left: 27vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 6fr;
+  row-gap: 30px;
+}
+.main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -30px;
+}
+#TODO-text {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 7px;
+}
+#sun-logo {
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------*/
+
+.main-middle {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.checkBox-new {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  appearance: none;
+  border: 1px solid hsl(234, 39%, 85%);
+  background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+}
+
+.fill-new-task {
+  width: 85%;
+  height: 95%;
+  background: none;
+  border: none;
+  color: hsl(234, 39%, 85%);
+  font-size: 20px;
+}
+
+.fill-new-task:focus {
+  outline: none;
+}
+
+/*-----------------------------------------------------*/
+.main-bottom {
+  background-color: hsl(235, 24%, 19%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: fit-content;
+}
+.task {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  justify-content: space-around;
+}
+.todo-text {
+  color: hsl(236, 6%, 51%);
+  font-size: 20px;
+  width: 85%;
+}
+.todo-button {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  appearance: none;
+  border-radius: 100%;
+  border: 1px solid hsl(234, 39%, 85%);
+}
+.todo-button:checked {
+  background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  outline: none;
+}
+.centre-of-configuration {
+  display: flex;
+
+  bottom: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+#numbers-of-items {
+  color: hsl(234, 11%, 52%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#numbers-of-items:hover {
+  color:  hsl(220, 98%, 61%);
+}
+#all {
+  color: hsl(234, 11%, 52%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#all:hover {
+  color: hsl(220, 98%, 61%);
+}
+#active-items {
+  color: hsl(234, 11%, 52%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#active-items:hover {
+  color: hsl(220, 98%, 61%);
+}
+#completed-items {
+  color: hsl(234, 11%, 52%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#completed-items:hover {
+  color: hsl(220, 98%, 61%);
+}
+#clear-completed {
+  color: hsl(234, 11%, 52%);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#clear-completed:hover {
+  color: hsl(220, 98%, 61%);
+}

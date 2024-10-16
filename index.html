@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="main">
+      <div class="main-top">
+        <p id="TODO-text">TODO</p>
+        <img src="images\icon-sun.svg" alt="" id="sun-logo" />
+      </div>
+      <div class="main-middle">
+        <button class="checkBox-new"></button>
+        <input
+          type="text"
+          placeholder="Create new todo ..."
+          class="fill-new-task" />
+      </div>
+      <div class="main-bottom">
+        <div class="centre-of-configuration">
+          <p id="numbers-of-items">
+            <span id="number-todo">0</span> items left
+          </p>
+          <p id="all">All</p>
+          <p id="active-items">Active</p>
+          <p id="completed-items">Completed</p>
+          <p id="clear-completed">Clear Completed</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
